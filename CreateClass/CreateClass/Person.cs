@@ -17,22 +17,22 @@ namespace CreateClass
     public class Person
 
     {
-        public String Name { get; set; }
-        public String  BirthDate { get; set; } 
-        public Gender Gender { get; set; }
+        public String name= "Nick";
+        public int BirthDate = 1944;
+        public Gender Gender;
+
+         public Person(String name, int birthDate, Gender genders)
+        {
+            this.name = name;
+            this.BirthDate = birthDate;
+            this.Gender = genders;
+        }
 
         public override string ToString()
         {
-            return "Person: " + Name + " " + BirthDate + " " + Gender ;
+            return name + " , " + BirthDate + " , " + Gender.Male;
         }
 
-        /*static void Main(string[] args)
-        {
-            Person person = new Person { Name = "John", BirthDate = "1994.02.04" , Gender = Gender.Male };
-            Person person2 = new Person { Name = "Mary", BirthDate = "1994.04.06" , Gender = Gender.Female };
-            Console.WriteLine(person);
-            Console.WriteLine(person2);
-            Console.Read();
-        */
+
     }
 }
