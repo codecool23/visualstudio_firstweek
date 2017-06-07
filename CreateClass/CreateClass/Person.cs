@@ -14,7 +14,7 @@ namespace CreateClass
     }
 
 
-    class Person
+    public class Person
 
     {
         public String Name { get; set; }
@@ -26,13 +26,13 @@ namespace CreateClass
             return "Person: " + Name + " " + BirthDate + " " + Gender ;
         }
 
-        static void Main(string[] args)
+        /*static void Main(string[] args)
         {
             Person person = new Person { Name = "John", BirthDate = "1994.02.04" , Gender = Gender.Male };
             Person person2 = new Person { Name = "Mary", BirthDate = "1994.04.06" , Gender = Gender.Female };
             Console.WriteLine(person);
             Console.WriteLine(person2);
             Console.Read();
-        }
+        */
     }
 }
